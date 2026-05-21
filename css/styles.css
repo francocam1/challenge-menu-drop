@@ -58,16 +58,49 @@ body{
     flex-direction: column;
     padding: 40px 0;
     box-shadow: -40px 40px 50px -10px rgba(0, 0, 0, 0.564);
+    
 }
 
 .header__nav--active .nav-menu{
     list-style: none;
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .header__nav--active .nav-menu-btn{
     
     background-color:transparent;
+    
+}
+
+.header__nav--active .header__nav-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+    
+ 
+.header__nav--active .header__nav-btns button{
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-gray-500);
+    font-size: 15px;
+}
+
+
+.header__nav--active .header__nav-btns button:nth-of-type(2){
+    background-color:transparent;
+    border: 2px solid var(--color-gray-500);
+}
+
+.nav-menu-btn button span{
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    
 }
 
 .header__nav--active .nav-menu-btn button{
@@ -85,6 +118,15 @@ body{
     
 }
 
+.nav-menu-btn-career a,
+.nav-menu-btn-about a{
+    text-decoration: none;
+    color: var(--color-gray-500);
+    font-weight: 500;
+}
+
+
+
 .sub-menu{
     height: 250px;
     
@@ -100,7 +142,7 @@ body{
     max-height: 70%;
     width: 70%;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     
 }
 
@@ -143,6 +185,7 @@ body{
     
 }
     
+
 
 
 
